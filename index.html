@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>FULLSCREEN TING!</title>
+
+        <link rel="stylesheet"  href="assets/css/style.css" />
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('.page, body').css("height", $(window).height());
+                $(window).resize(function(){
+                    $(".page, body").height($(window).height());
+                }).resize();
+
+                $(window).on('load', function () {
+                    $('body').addClass('loaded');
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <img src="assets/img/spinner.gif" class="loader" alt=""/>
+
+        <div id="site">
+            <div class="page" style="background-image:url(assets/img/content/photo-01.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-02.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-03.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-04.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-05.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-06.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-07.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-08.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-09.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-10.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-11.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-12.jpg)"></div>
+            <div class="page" style="background-image:url(assets/img/content/photo-13.jpg)"></div>
+
+        </div>
+    </body>
+</html>
